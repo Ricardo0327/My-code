@@ -26,8 +26,9 @@ vector<int>Dup(int nums[],int length)
 }
 int main()
 {
-	int numbers[8]={2,3,1,0,2,5,3};
-	int length=sizeof(numbers)/sizeof(int)-1;
+	int numbers[]={2,3,1,0,2,5,3};
+	//题目中要求在长度为n的数组，数组中的数字都在0～n-1范围内，以2,3,1,0,2,5,3为例，故数组长度直接设置为
+	int length=sizeof(numbers)/sizeof(int);
 	vector<int>res;
 	res=Dup(numbers,length);
 	for(int i=0;i<res.size();i++)
